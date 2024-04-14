@@ -1,0 +1,26 @@
+package com.api;
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
+
+        // 배열 크기 입력
+        int a = Integer.valueOf(sc1.next());
+
+        // 정수 배열을 정렬해서 반환하는 solution() 함수
+        ArrayList arr = new ArrayList<Integer>();
+
+        // 배열 데이터 입력
+        for(int i = 0; i<a; i++ ){
+            arr.add(sc2.next());
+        }
+
+        //오름차순 정렬
+        Collections.sort(arr);
+        System.out.print(arr);
+
+    }
+}
